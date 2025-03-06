@@ -8,6 +8,9 @@ import EducationalHub from "./pages/EducationalHub";
 import MedicineReminder from "./pages/MedicineReminder";
 import OfflineAccess from "./pages/OfflineAccess";
 import VoiceAssistance from "./pages/VoiceAssistance";
+import Bloom from "./pages/Bloom";
+
+
 
 const App = () => {
   return (
@@ -21,6 +24,7 @@ const App = () => {
         <Route path="/medicine-reminder" element={<MedicineReminder />} />
         <Route path="/offline-access" element={<OfflineAccess />} />
         <Route path="/voice-assistance" element={<VoiceAssistance />} />
+        <Route path="/bloom_assistant" element={<Bloom />} />
         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
       </Routes>
     </Router>

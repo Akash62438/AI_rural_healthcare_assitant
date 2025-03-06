@@ -3,6 +3,7 @@ import "./Home.css";
 import doctorImage from "../assets/doctor.jpg";
 import chatbotImage from "../assets/chatbot.jpg";
 import {
+  FaHeartbeat,
   FaStethoscope,
   FaVideo,
   FaAmbulance,
@@ -48,18 +49,18 @@ const Home = () => {
     <div className="home">
       {/* Header Section */}
       <header className="header">
-  <h1>AI Healthcare Platform</h1>
-  <nav>
-    <ul>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="/medicine-reminder">Medicine Reminder</a></li>
-      <li><a href="/offline-access">Offline Access</a></li>
-      <li><a href="/voice-assistance">Voice Assistance</a></li>
-    </ul>
-  </nav>
-</header>
+        <h1>AI Healthcare Platform</h1>
+        <nav>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="/medicine-reminder">Medicine Reminder</a></li>
+            <li><a href="/offline-access">Offline Access</a></li>
+            <li><a href="/voice-assistance">Voice Assistance</a></li>
+          </ul>
+        </nav>
+      </header>
 
       {/* Hero Section */}
       <section className="hero">
@@ -81,76 +82,88 @@ const Home = () => {
 
       {/* Features Section */}
       <section id="features" className="features">
-  <h2>Our Key Features</h2>
-  <div className="feature-list">
-    <div className="feature-item">
-      <FaStethoscope className="feature-icon" />
-      <h3>AI Symptom Checker</h3>
-      <p>Instant medical insights based on your symptoms.</p>
-      <button
-        className="cta-button"
-        onClick={() => (window.location.href = "/symptom-checker")}
-      >
-        Check Symptoms
-      </button>
-    </div>
-    <div className="feature-item">
-      <FaVideo className="feature-icon" />
-      <h3>Teleconsultation</h3>
-      <p>Connect with doctors via secure video calls.</p>
-      <button
-        className="cta-button"
-        onClick={() => (window.location.href = "/teleconsultation")}
-      >
-        Book Consultation
-      </button>
-    </div>
-    <div className="feature-item">
-      <FaAmbulance className="feature-icon" />
-      <h3>Emergency SOS</h3>
-      <p>One-click emergency alerts with GPS location.</p>
-      <button
-        className="cta-button"
-        onClick={() => (window.location.href = "/emergency-sos")}
-      >
-        Send SOS
-      </button>
-    </div>
-    <div className="feature-item">
-      <FaBook className="feature-icon" />
-      <h3>Health Education</h3>
-      <p>Interactive guides on maternal care, hygiene, and first aid.</p>
-      <button
-        className="cta-button"
-        onClick={() => (window.location.href = "/educational-hub")}
-      >
-        Explore Hub
-      </button>
-    </div>
-    <div className="feature-item">
-      <FaWifi className="feature-icon" />
-      <h3>Offline Accessibility</h3>
-      <p>Access health content even in low-bandwidth areas.</p>
-      <button
-        className="cta-button"
-        onClick={() => (window.location.href = "/offline-access")}
-      >
-        Learn More
-      </button>
-    </div>
-    <div className="feature-item">
-      <FaMicrophone className="feature-icon" />
-      <h3>Voice-Activated Assistance</h3>
-      <p>Navigate the app using voice commands.</p>
-      <button
-        className="cta-button"
-        onClick={() => (window.location.href = "/voice-assistance")}
-      >
-        Try Now
-      </button>
-    </div>
-  </div>
-</section>
+        <h2>Our Key Features</h2>
+        <div className="feature-list">
+          <div className="feature-item">
+            <FaStethoscope className="feature-icon" />
+            <h3>AI Symptom Checker</h3>
+            <p>Instant medical insights based on your symptoms.</p>
+            <button
+              className="cta-button"
+              onClick={() => (window.location.href = "/symptom-checker")}
+            >
+              Check Symptoms
+            </button>
+          </div>
+          <div className="feature-item">
+            <FaVideo className="feature-icon" />
+            <h3>Teleconsultation</h3>
+            <p>Connect with doctors via secure video calls.</p>
+            <button
+              className="cta-button"
+              onClick={() => (window.location.href = "/teleconsultation")}
+            >
+              Book Consultation
+            </button>
+          </div>
+          <div className="feature-item">
+            <FaAmbulance className="feature-icon" />
+            <h3>Emergency SOS</h3>
+            <p>One-click emergency alerts with GPS location.</p>
+            <button
+              className="cta-button"
+              onClick={() => (window.location.href = "/emergency-sos")}
+            >
+              Send SOS
+            </button>
+          </div>
+          <div className="feature-item">
+            <FaBook className="feature-icon" />
+            <h3>Health Education</h3>
+            <p>Interactive guides on maternal care, hygiene, and first aid.</p>
+            <button
+              className="cta-button"
+              onClick={() => (window.location.href = "/educational-hub")}
+            >
+              Explore Hub
+            </button>
+          </div>
+          <div className="feature-item">
+            <FaWifi className="feature-icon" />
+            <h3>Offline Accessibility</h3>
+            <p>Access health content even in low-bandwidth areas.</p>
+            <button
+              className="cta-button"
+              onClick={() => (window.location.href = "/offline-access")}
+            >
+              Learn More
+            </button>
+          </div>
+          <div className="feature-item">
+            <FaMicrophone className="feature-icon" />
+            <h3>Voice-Activated Assistance</h3>
+            <p>Navigate the app using voice commands.</p>
+            <button
+              className="cta-button"
+              onClick={() => (window.location.href = "/voice-assistance")}
+            >
+              Try Now
+            </button>
+          </div>
+          <div className="feature-item">
+            <FaHeartbeat className="feature-icon" />
+            <h3>Bloom</h3>
+            <p>AI assistant chatbot for pregnancy ladies in rural areas.</p>
+            <button
+              className="cta-button"
+              onClick={() => (window.location.href = "/bloom_assistant")}
+            >
+              Try Now
+            </button>
+          </div>
+
+        </div>
+      </section>
 
       {/* Testimonials Section */}
       <section id="testimonials" className="testimonials">
